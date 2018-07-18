@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
+    <script data-main="js/action" src="js/require.js"></script>
+    <!--<script src="js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="js/lib/vendors/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="js/action.js"></script>-->
+</head>
+
+<body class="col-xs-12">
+    <div class="leftSide col-xs-3">
+        <div class="leftSide-text">Podobno</div>
+    </div>
+    <div id="fullpage" class="rightSide col-xs-8">
+        <!-- <div id="text1" class="section"></div> -->
+    </div>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Dodaj opcje</button>
+
+    <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Opcje</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-param">
+              <div class="form-group single-param" data="1">
+                <label for="recipient-name" class="control-label">Tekst : </label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+            </div>
+            <button type="button" class="btn btn-add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-accept">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
